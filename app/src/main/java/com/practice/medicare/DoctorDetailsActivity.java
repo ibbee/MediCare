@@ -66,8 +66,8 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_details);
 
-        tv = findViewById(R.id.textViewDDTitle);
-        btn = findViewById(R.id.buttonDDBack);
+        tv = findViewById(R.id.textView_logo6);
+        btn = findViewById(R.id.buttonLTBack);
 
         Intent it = getIntent();
         String title = it.getStringExtra("title");
@@ -100,7 +100,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         sa = new SimpleAdapter(this, list, R.layout.multi_lines,
                 new String[]{"line1","line2","line3","line4","line5"}, //from
                 new int[]{R.id.line_a, R.id.line_b, R.id.line_c, R.id.line_d, R.id.line_e}); //to
-        ListView lst = findViewById(R.id.listViewDD);
+        ListView lst = findViewById(R.id.listViewLT);
         lst.setAdapter(sa);
 
 //        passing details for book activity
