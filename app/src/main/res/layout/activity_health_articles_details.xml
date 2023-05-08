@@ -6,19 +6,20 @@
     android:layout_height="match_parent"
     android:background="@drawable/back1"
     tools:context=".HealthArticlesDetailsActivity">
+
     <TextView
-        android:id="@+id/textView_titleHD"
+        android:id="@+id/textViewHADTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="DENTIST"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo3"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo3" />
 
     <TextView
         android:id="@+id/textView_logo3"
@@ -35,25 +36,25 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <Button
-        android:id="@+id/buttonHDBack"
+        android:id="@+id/buttonHADBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="BACK"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.69"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHAD" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="358dp"
-        android:layout_height="526dp"
+        android:id="@+id/imageViewHAD"
+        android:layout_width="361dp"
+        android:layout_height="505dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_titleHD"
-        tools:srcCompat="@drawable/health1"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewHADTitle"
+        tools:srcCompat="@drawable/health1" />
 
 
 

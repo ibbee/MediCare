@@ -13,7 +13,7 @@ import android.widget.SimpleAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class HealthArticleActivity extends AppCompatActivity {
+public class HealthArticleActivity extends AppCompatActivity {
 
     private String[][] health_details =
             {

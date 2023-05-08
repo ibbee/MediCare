@@ -8,18 +8,18 @@
     tools:context=".HealthArticleActivity">
 
     <TextView
-        android:id="@+id/textView_title"
+        android:id="@+id/textViewHATitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Health Articles"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo3"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo3" />
 
     <TextView
         android:id="@+id/textView_logo3"
@@ -37,25 +37,26 @@
 
     <ListView
         android:id="@+id/listViewHA"
-        android:layout_width="344dp"
-        android:layout_height="523dp"
+        android:layout_width="339dp"
+        android:layout_height="498dp"
         android:layout_marginStart="-40dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="-40dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView_title"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHATitle"
         app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="@+id/textView_title"
-        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+        app:layout_constraintStart_toStartOf="@+id/textViewHATitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHATitle" />
 
     <Button
         android:id="@+id/buttonHABack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="BACK"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.69"/>
+        app:layout_constraintTop_toBottomOf="@+id/listViewHA" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
