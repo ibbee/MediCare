@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <TextView
-        android:id="@+id/textViewAppTitle"
+        android:id="@+id/textViewBMBPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Book Appointment"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.028" />
 
     <EditText
-        android:id="@+id/editTextLTBFullname"
+        android:id="@+id/editTextBMBFullname"
         android:layout_width="299dp"
         android:layout_height="47dp"
         android:layout_marginTop="32dp"
@@ -55,10 +55,10 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMBPackageName" />
 
     <EditText
-        android:id="@+id/editTextLTBAddress"
+        android:id="@+id/editTextBMBAddress"
         android:layout_width="299dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
@@ -76,10 +76,10 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullname" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBFullname" />
 
     <EditText
-        android:id="@+id/editTextLTBPincode"
+        android:id="@+id/editTextBMBPincode"
         android:layout_width="299dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
@@ -97,10 +97,10 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBAddress" />
 
     <EditText
-        android:id="@+id/editTextLTBContact"
+        android:id="@+id/editTextBMBContact"
         android:layout_width="299dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
@@ -118,7 +118,7 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPincode" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBPincode" />
 
     <Button
         android:id="@+id/buttonBookAppointment"
@@ -129,10 +129,10 @@
         android:text="Book Appointment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBContact" />
 
     <Button
-        android:id="@+id/buttonLTBBooking"
+        android:id="@+id/buttonBMBBooking"
         android:layout_width="293dp"
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
@@ -152,10 +152,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBContact" />
 
     <Button
-        android:id="@+id/buttonCartDate"
+        android:id="@+id/buttonBMCartDate"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBContact" />
 
     <Button
         android:id="@+id/buttonCartTime"

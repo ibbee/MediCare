@@ -29,15 +29,15 @@ public class BookAppointmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_appointment);
 
-        tv = findViewById(R.id.textViewAppTitle);
-        ed1 = findViewById(R.id.editTextLTBFullname);
-        ed2 = findViewById(R.id.editTextLTBAddress);
-        ed3 = findViewById(R.id.editTextLTBPincode);
-        ed4 = findViewById(R.id.editTextLTBContact);
-        dateButton = findViewById(R.id.buttonCartDate);
+        tv = findViewById(R.id.textViewBMBPackageName);
+        ed1 = findViewById(R.id.editTextBMBFullname);
+        ed2 = findViewById(R.id.editTextBMBAddress);
+        ed3 = findViewById(R.id.editTextBMBPincode);
+        ed4 = findViewById(R.id.editTextBMBContact);
+        dateButton = findViewById(R.id.buttonBMCartDate);
         timeButton = findViewById(R.id.buttonCartTime);
         btnBook = findViewById(R.id.buttonBookAppointment);
-        btnBack = findViewById(R.id.buttonLTBBooking);
+        btnBack = findViewById(R.id.buttonBMBBooking);
 
 //        unclickable edittext
         ed1.setKeyListener(null);

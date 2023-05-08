@@ -22,10 +22,10 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 //        creating objects
-        edUsername = findViewById(R.id.editTextLTBFullname);
-        edPassword = findViewById(R.id.editTextLTBPincode);
-        edEmail = findViewById(R.id.editTextLTBAddress);
-        edConfirm = findViewById(R.id.editTextLTBContact);
+        edUsername = findViewById(R.id.editTextBMBFullname);
+        edPassword = findViewById(R.id.editTextBMBPincode);
+        edEmail = findViewById(R.id.editTextBMBAddress);
+        edConfirm = findViewById(R.id.editTextBMBContact);
         btn = findViewById(R.id.buttonBookAppointment);
         tv = findViewById(R.id.textViewExistingUser);
 

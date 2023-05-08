@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
-    tools:context=".LabTestDetailsActivity">
+    tools:context=".BuyMedicineDetailsActivity">
 
     <TextView
         android:id="@+id/textViewDDName"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Lab Test and Packages"
+        android:text="Buy Medicines"
         android:textColor="@color/yellowLight"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Total Cost"
+        android:text="TextView"
         android:textColor="@color/yellowLight"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@id/textViewDDName" />
 
     <ListView
-        android:id="@+id/listViewOD"
+        android:id="@+id/listViewBMCart"
         android:layout_width="336dp"
         android:layout_height="453dp"
         android:layout_margin="10dp"
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
 
     <Button
-        android:id="@+id/buttonODBack"
+        android:id="@+id/buttonBMCartCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -57,6 +57,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewOD" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewBMCart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
