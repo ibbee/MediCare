@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.033" />
 
     <TextView
-        android:id="@+id/textViewDDTitle2"
+        android:id="@+id/textViewCartTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Packages"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <ListView
-        android:id="@+id/listViewLT"
+        android:id="@+id/listViewCart"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -61,10 +61,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDTitle2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartTitle" />
 
     <Button
-        android:id="@+id/buttonLTBack"
+        android:id="@+id/buttonCartCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonLDAddToCart"
+        android:id="@+id/buttonCartBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GO TO CART"

@@ -2,12 +2,15 @@ package com.practice.medicare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LabTestDetailsActivity extends AppCompatActivity {
 
@@ -23,7 +26,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         tvPackageName = findViewById(R.id.textViewLDPackageName);
         tvTotalCost = findViewById(R.id.textViewLDTotalCost);
         edDetails = findViewById(R.id.editTextLDTextMultiLine);
-        btnAddToCart = findViewById(R.id.buttonLDAddToCart);
+        btnAddToCart = findViewById(R.id.buttonCartBack);
         btnBack = findViewById(R.id.buttonLDBack);
 
         edDetails.setKeyListener(null);
@@ -43,7 +46,22 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                database table modification required
+                //db work
+                SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+                String username = sharedpreferences.getString("username", "").toString();
+                String product = tvPackageName.getText().toString();
+                float price = Float.parseFloat(intent.getStringExtra("text3").toString());
+
+                Database db = new Database(getApplicationContext(), "medicare", null, 1);
+
+                //check if product is already in cart
+                if(db.checkCart(username, product)==1) {
+                    Toast.makeText(getApplicationContext(), "Product Already Added", Toast.LENGTH_SHORT).show();
+                }else {
+                    db.addCart(username, product, price, "lab");
+                    Toast.makeText(getApplicationContext(), "Record Inserted to Cart", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(LabTestDetailsActivity.this, LabTestActivity.class));
+                }
             }
         });
     }

@@ -155,7 +155,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <Button
-        android:id="@+id/buttonAppDate"
+        android:id="@+id/buttonCartDate"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <Button
-        android:id="@+id/buttonAppTime"
+        android:id="@+id/buttonCartTime"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
