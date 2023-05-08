@@ -16,7 +16,6 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -41,10 +40,10 @@ public class CartLabActivity extends AppCompatActivity {
 
         dateButton = findViewById(R.id.buttonCartDate);
         timeButton = findViewById(R.id.buttonCartTime);
-        btnCheckout = findViewById(R.id.buttonCartCheckout);
+        btnCheckout = findViewById(R.id.buttonODBack);
         btnBack = findViewById(R.id.buttonCartBack);
         tvTotal =findViewById(R.id.textViewCartTotalCost);
-        lst = findViewById(R.id.listViewCart);
+        lst = findViewById(R.id.listViewOD);
 
         //getting credentials
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);

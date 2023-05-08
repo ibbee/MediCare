@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
-    tools:context=".LabTestActivity">
+    android:background="@drawable/back1"
+    tools:context=".OrderDetailsActivity">
 
     <TextView
         android:id="@+id/textViewDDName"
@@ -25,63 +25,37 @@
         android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deliver Location : Lahore"
+        android:layout_marginTop="16dp"
+        android:text="ORDER DETAILS"
         android:textColor="@color/colorWhite"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewDDName"
-        app:layout_constraintVertical_bias="0.033" />
-
-    <TextView
-        android:id="@+id/textViewCartTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lab Test and Packages"
-        android:textColor="@color/yellowLight"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewDDName"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintTop_toBottomOf="@id/textViewDDName" />
 
     <ListView
         android:id="@+id/listViewOD"
-        android:layout_width="339dp"
-        android:layout_height="443dp"
+        android:layout_width="336dp"
+        android:layout_height="453dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCartTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
 
     <Button
         android:id="@+id/buttonODBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="BACK"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewOD" />
-
-    <Button
-        android:id="@+id/buttonCartBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="GO TO CART"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listViewOD" />
 

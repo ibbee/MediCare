@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textView_logo6"
+        android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Default Text"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
-        android:id="@+id/listViewCart"
+        android:id="@+id/listViewOD"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -46,10 +46,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_logo6" />
+        app:layout_constraintTop_toBottomOf="@id/textViewODTitle" />
 
     <Button
-        android:id="@+id/buttonCartCheckout"
+        android:id="@+id/buttonODBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"

@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textView_logo6"
+        android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewOD" />
 
     <TextView
         android:id="@+id/textViewCartTitle"
@@ -64,16 +64,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewDDName" />
 
     <ListView
-        android:id="@+id/listViewCart"
+        android:id="@+id/listViewOD"
         android:layout_width="358dp"
         android:layout_height="336dp"
         android:layout_margin="10dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView_logo6"
-        app:layout_constraintStart_toStartOf="@+id/textView_logo6"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo6" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewODTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewODTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
 
     <TextView
         android:id="@+id/textView3"
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/buttonCartCheckout"
+        android:id="@+id/buttonODBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
